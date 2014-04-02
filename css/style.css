@@ -18,7 +18,7 @@ h1 {
 	font-weight:normal;
 	font-size: 55px;
 	text-align: center;
-	color: #fff;
+	color: #aaa;
 	margin: 0;
 	padding: 0;
 }
@@ -83,6 +83,22 @@ a.rpanel:hover{ color: #fff; }
 #nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
 #nav li a:hover { color: #fff; opacity:1;  }
 
+.donate-links ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;	
+}
+
+.donate-links li{
+	margin-top: 9px;	
+	/*float: left;*/
+	padding-left: 21px;
+}
+
+.donate-links li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+.donate-links li a:hover { color: #fff; opacity:1;  }
+
 
 
 /*= BUTTONS
@@ -106,7 +122,9 @@ button.btn-know {
 ul.built { list-style: none; margin: 0 auto; width: 730px; }
 .built li img{ float: left; padding-right: 34px; }
 
-
+.donate-links {
+	float:right;	
+}
 
 /*= SLIDES STYLING
 --------------------------------------------------------*/
