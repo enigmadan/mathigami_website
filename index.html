@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <title>Creating a Simple Parallax Scrolling Website</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Mathigami</title>
        <link rel="stylesheet" href="css/style.css"/>
-	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
        <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
-	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
-	<script>
+<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+<script>
    
-<!----- JQUERY FOR SLIDING NAVIGATION --->   
+<!----- JQUERY FOR SLIDING NAVIGATION --->
 $(document).ready(function() {
-  $('a[href*=#]').each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
 
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-         $(this).click(function() {
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
+         $(this).click(function() {
             $("#nav li a").removeClass("active");
             $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-      }
-    }
-  });
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
 
 });
 
@@ -40,60 +40,63 @@ $(document).ready(function() {
 </script>
 
 
- </head> 
-	
+ </head>
+
 <body>
-<!----- HEADER START--->   
+<!----- HEADER START--->
 <header id="header">
 <div class="content">
-<div id="logo"><a href=""> Mathigami </a></div>
+<div id="logo"><a href=""><img src="../../Documents/mathigami-small.png" width="240" height="50" alt="Mathigami"></a></div>
 
 <nav id="nav">
-	<ul>
-		<li><a href="#home" class="active" title="Next Section" >Home</a></li>
-		<li><a href="#about" title="Next Section">About</a></li>
-		<li><a href="#donate" title="Next Section">Donate</a></li>
-	</ul>
+<ul>
+<li><a href="#home" class="active" title="Next Section" >Home</a></li>
+<li><a href="#about" title="Next Section">About</a></li>
+<li><a href="#donate" title="Next Section">Donate</a></li>
+</ul>
 </nav>
 </div>
 </header>	
-<!----- HEADER END--->   
+<!----- HEADER END--->
 
-<!----- SLIDES START --->   	
-	<div id="home">
-		<div class="content">
-		    <h1>Mathigami</h1>
-		</div> 
-    </div> 
+<!----- SLIDES START --->
+<div id="home">
+<div class="content">
+<h1><img src="../../Documents/mathigami-large.png" width="900" height="172" alt="Mathigami"></h1>
+</div>
+</div>
 
-	<div id="about">
-		<div class="content" >
+<div id="about">
+<div class="content" >
         <h1>About</h1>
         <p>Stuff about Mathigami. More stuff written here about Mathigami and stuffy stuff stuff.</p>
-		</div> 
-    </div> 
-	
-	
+</div>
+    </div>
+
    <div id="donate">
-		<div class="content">
-			   <div class="quotes_container">
-		       <h3 class="quotes">Words and stuff. About different donation amounts.  </h3>
-		      <img src="img/norman.png" align="left"/> <h4 class="author_name_white">pictures? </h4>
-		    </div> 
-		</div> 
-    </div> 
-	
-	
-	<div id="thanks">
-		<div class="content">
+<div class="content">
+<div class="donate-links"><ul>
+<li><a href="">Item 1</a></li>
+<li><a href="">Item 2</a></li>
+<li><a href="">Item 3</a></li>
+</ul></div>
+<div class="quotes_container">
+<h3 class="quotes">Words and stuff. About different donation amounts. </h3>
+<img src="img/norman.png" align="left"/> <h4 class="author_name_white">pictures? </h4>
+</div>
+</div>
+    </div>
+
+
+<div id="thanks">
+<div class="content">
               <div class="quotes_container">
-		    <h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....” </h3>
-		  <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
-		</div> 
-		</div> 
-    </div> 
-	
-		
+<h3 class="quotes">Thank you for donating moneys. </h3><h4 class="author_name_gray">&nbsp;</h4>
+</div>
+</div>
+    </div>
+
+
 <!----- SLIDES END --->
 
 </body>
